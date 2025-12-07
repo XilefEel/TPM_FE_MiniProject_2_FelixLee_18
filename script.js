@@ -30,7 +30,7 @@ editButtons.forEach((button) => {
   button.addEventListener("click", () => {
     productsGrid.style.display = "none";
     addButton.style.display = "none";
-    pageTitle.textContent = "Edit Product";
+    pageTitle.textContent = "Update Product";
     editProductModal.style.display = "flex";
   });
 });

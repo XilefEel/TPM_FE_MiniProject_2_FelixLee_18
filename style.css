@@ -73,10 +73,26 @@ body {
   padding: 8px 16px;
   border-radius: 25px;
   transition: background-color 0.2s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
 }
 
 .nav-link.active {
+  color: #000;
   background: rgba(255, 255, 255, 0.6);
+}
+
+.nav-icon {
+  height: 24px;
+  filter: invert(1);
+}
+
+.nav-icon.active {
+  height: 24px;
+  filter: invert(0);
 }
 
 .main-content {
@@ -125,6 +141,10 @@ body {
   opacity: 0.7;
 }
 
+.edit-action {
+  height: 20px;
+}
+
 .products-grid {
   display: flex;
   flex-direction: row;
@@ -151,7 +171,17 @@ body {
 
 .card-title {
   margin: 0;
+  display: flex;
+  flex-direction: row;
   font-size: 18px;
+  align-items: center;
+  gap: 14px;
+  font-weight: 500;
+}
+
+.card-image {
+  height: 40px;
+  border-radius: 10px;
 }
 
 .card-body {
@@ -168,7 +198,7 @@ body {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  gap: 10px;
+  gap: 3px;
 }
 
 .info-item {
@@ -195,8 +225,6 @@ body {
 
 .divider {
   width: 100%;
-  border: none;
-  border-top: 1px solid #e5e7eb;
   margin: 10px 0;
 }
 

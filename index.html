@@ -24,14 +24,32 @@
     <div class="layout">
       <aside class="sidebar">
         <nav class="nav-group">
-          <a class="nav-link">Dashboard</a>
-          <a class="nav-link active">Products</a>
-          <a class="nav-link">Orders</a>
-          <a class="nav-link">Settings</a>
+          <div class="nav-link">
+            <img src="assets/layout-dashboard.svg" class="nav-icon" />
+            <div>Dashboard</div>
+          </div>
+          <div class="nav-link active">
+            <img src="assets/archive.svg" class="nav-icon active" />
+            <div>Products</div>
+          </div>
+          <div class="nav-link">
+            <img src="assets/receipt-text.svg" class="nav-icon" />
+            <div>Orders</div>
+          </div>
+          <div class="nav-link">
+            <img src="assets/settings.svg" class="nav-icon" />
+            <div>Settings</div>
+          </div>
         </nav>
         <nav class="nav-group">
-          <a class="nav-link">Help</a>
-          <a class="nav-link">Feedback</a>
+          <div class="nav-link">
+            <img src="assets/circle-question-mark.svg" class="nav-icon" />
+            <div>Help</div>
+          </div>
+          <div class="nav-link">
+            <img src="assets/message-square-warning.svg" class="nav-icon" />
+            <div>Feedback</div>
+          </div>
         </nav>
       </aside>
 
@@ -44,7 +62,10 @@
         <section class="products-grid">
           <article class="product-card">
             <header class="card-header">
-              <h2 class="card-title">Wireless Earbuds</h2>
+              <div class="card-title">
+                <img src="assets/earpods.png" class="card-image" />
+                <div>Wireless Earbuds</div>
+              </div>
             </header>
 
             <div class="card-body">
@@ -68,30 +89,35 @@
               <hr class="divider" />
 
               <div class="card-actions">
-                <button class="icon-btn" aria-label="Edit product">✏️</button>
-                <button class="icon-btn" aria-label="Delete product">🗑️</button>
+                <button class="icon-btn" aria-label="Edit product">
+                  <img src="assets/pencil.svg" class="edit-action" />
+                </button>
+                <button class="icon-btn" aria-label="Delete product">
+                  <img src="assets/trash.svg" class="edit-action" />
+                </button>
               </div>
             </div>
           </article>
 
           <article class="product-card">
             <header class="card-header">
-              <h2 class="card-title">Yoga Mat</h2>
+              <div class="card-title">
+                <img src="assets/mat.png" class="card-image" />
+                <div>Yoga Mat</div>
+              </div>
             </header>
             <div class="card-body">
               <div class="card-info">
-                <div class="info-item">
-                  <strong>Category:</strong> Electronics
-                </div>
-                <div class="info-item"><strong>Price:</strong> $108</div>
+                <div class="info-item"><strong>Category:</strong> Fitness</div>
+                <div class="info-item"><strong>Price:</strong> $30</div>
                 <div class="info-item description-row">
                   <span class="info-label">Desc:</span>
                   <p class="info-text">
-                    Compact wireless earbuds delivering crisp audio and seamless
-                    Bluetooth connectivity. With long-lasting battery life and
-                    noise-isolating design, they offer an immersive listening
-                    experience whether you're working out, commuting, or
-                    relaxing.
+                    A durable, non-slip yoga mat designed for stability and
+                    comfort. Its cushioned surface supports your joints during
+                    stretching, balance training, and high-intensity workouts.
+                    Lightweight and easy to carry, perfect for home practice or
+                    studio sessions.
                   </p>
                 </div>
               </div>
@@ -99,30 +125,36 @@
               <hr class="divider" />
 
               <div class="card-actions">
-                <button class="icon-btn" aria-label="Edit product">✏️</button>
-                <button class="icon-btn" aria-label="Delete product">🗑️</button>
+                <button class="icon-btn" aria-label="Edit product">
+                  <img src="assets/pencil.svg" class="edit-action" />
+                </button>
+                <button class="icon-btn" aria-label="Delete product">
+                  <img src="assets/trash.svg" class="edit-action" />
+                </button>
               </div>
             </div>
           </article>
 
           <article class="product-card">
             <header class="card-header">
-              <h2 class="card-title">Leather Backpack</h2>
+              <div class="card-title">
+                <img src="assets/bag.jpg" class="card-image" />
+                <div>Leather Backpack</div>
+              </div>
             </header>
             <div class="card-body">
               <div class="card-info">
                 <div class="info-item">
-                  <strong>Category:</strong> Electronics
+                  <strong>Category:</strong> Accessories
                 </div>
-                <div class="info-item"><strong>Price:</strong> $108</div>
+                <div class="info-item"><strong>Price:</strong> $64</div>
                 <div class="info-item description-row">
                   <span class="info-label">Desc:</span>
                   <p class="info-text">
-                    Compact wireless earbuds delivering crisp audio and seamless
-                    Bluetooth connectivity. With long-lasting battery life and
-                    noise-isolating design, they offer an immersive listening
-                    experience whether you're working out, commuting, or
-                    relaxing.
+                    A stylish genuine-leather backpack crafted for everyday use.
+                    Featuring multiple compartments for organized storage, it
+                    combines durability, elegance, and practicality ideal for
+                    work, travel, or casual outings.
                   </p>
                 </div>
               </div>
@@ -130,8 +162,12 @@
               <hr class="divider" />
 
               <div class="card-actions">
-                <button class="icon-btn" aria-label="Edit product">✏️</button>
-                <button class="icon-btn" aria-label="Delete product">🗑️</button>
+                <button class="icon-btn" aria-label="Edit product">
+                  <img src="assets/pencil.svg" class="edit-action" />
+                </button>
+                <button class="icon-btn" aria-label="Delete product">
+                  <img src="assets/trash.svg" class="edit-action" />
+                </button>
               </div>
             </div>
           </article>
@@ -192,7 +228,7 @@
             <hr class="divider" />
 
             <div class="form-actions">
-              <button class="btn-primary">Edit Product</button>
+              <button class="btn-primary">Update Product</button>
             </div>
           </div>
         </section>
