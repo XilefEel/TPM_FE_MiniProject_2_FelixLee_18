@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -15,6 +16,8 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  padding-left: 50px;
+  box-sizing: border-box;
 }
 
 .brand {
@@ -61,6 +64,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 90%;
 }
 
 .nav-link {
@@ -209,7 +213,8 @@ body {
   margin-top: 30px;
 }
 
-.add-product-modal {
+.add-product-modal,
+.edit-product-modal {
   background-color: white;
   height: 500px;
   width: 980px;
