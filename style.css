@@ -11,21 +11,20 @@ body {
 }
 
 .navbar {
-  height: 77px;
+  height: 76px;
   width: 100%;
-  padding: 0px 50px 0px 50px;
   display: flex;
   flex-direction: row;
 }
 
-.navbar .header {
+.brand {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
 
-.navbar h1 {
+.brand-title {
   margin: 0;
   font-size: 36px;
   background: linear-gradient(90deg, #8fcef5, #4986db);
@@ -34,12 +33,12 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.navbar p {
+.brand-subtitle {
   color: #4b5563;
   font-weight: 200;
 }
 
-.container {
+.layout {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -47,117 +46,240 @@ body {
 
 .sidebar {
   width: 240px;
+  min-width: 240px;
+  flex-shrink: 0;
   background-color: #7accff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0px 30px 0px;
+  padding: 30px 0;
   font-weight: 500;
 }
 
-.sidebar .group {
+.nav-group {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.sidebar .item {
+.nav-link {
   color: white;
-}
-
-.sidebar .item-active {
-  background: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  padding: 8px 16px;
   border-radius: 25px;
+  transition: background-color 0.2s;
 }
 
-.main {
-  padding: 30px 30px 30px 30px;
+.nav-link.active {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.main-content {
+  padding: 30px;
   background-color: #dbf0fd;
-  overflow-x: auto;
+  flex-grow: 1;
 }
 
-.main .header {
+.page-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.add-btn {
+.page-title {
+  margin: 0;
+}
+
+.btn-primary {
   background-color: #009eff;
   color: white;
   border: none;
   border-radius: 10px;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 16px;
   cursor: pointer;
   height: 40px;
   width: 160px;
+  font-size: medium;
+  font-weight: 500;
 }
 
-.card-container {
+.btn-primary:hover {
+  background-color: #0088dd;
+}
+
+.icon-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.icon-btn:hover {
+  opacity: 0.7;
+}
+
+.products-grid {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  overflow-x: auto;
+  margin-top: 20px;
 }
 
-.card {
+.product-card {
   display: flex;
   flex-direction: column;
   width: 354px;
+  flex-shrink: 0;
 }
 
-.card .top {
+.card-header {
   height: 56px;
   background-color: #7accff;
   display: flex;
   align-items: center;
   border-radius: 10px 10px 0 0;
-  padding: 5px 16px 5px 16px;
+  padding: 5px 16px;
 }
 
-.card .bottom {
+.card-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-body {
   height: 268px;
   background-color: white;
   color: #4b5563;
   display: flex;
   flex-direction: column;
   border-radius: 0 0 10px 10px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
 }
 
-.card .bottom .content {
+.card-info {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   gap: 10px;
 }
 
-.card .bottom .actions {
+.info-item {
   display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+  gap: 5px;
 }
 
-.row {
+.description-row {
   display: flex;
   align-items: flex-start;
   gap: 8px;
 }
 
-.label {
+.info-label {
   font-weight: bold;
   flex-shrink: 0;
   color: #333;
 }
 
-.value {
+.info-text {
   margin: 0;
   color: #4b5563;
 }
 
-.btn {
+.divider {
+  width: 100%;
   border: none;
-  background: none;
-  cursor: pointer;
+  border-top: 1px solid #e5e7eb;
+  margin: 10px 0;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.add-product-modal {
+  background-color: white;
+  height: 500px;
+  width: 980px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.product-form {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #4b5563;
+  font-size: 20px;
+}
+
+.form-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 20%;
+  justify-content: space-between;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.text-input {
+  border: none;
+  background-color: #dbf0fd;
+  border-radius: 10px;
+  padding: 8px 16px;
+  color: #4b5563;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.text-input:focus {
+  outline: 2px solid #009eff;
+}
+
+.file-upload {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.file-input {
+  flex-grow: 1;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
 }

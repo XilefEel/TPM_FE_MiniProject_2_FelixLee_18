@@ -10,49 +10,52 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Fumart</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="header">
-        <h1>Fumart</h1>
-        <p>for seller</p>
+    <header class="navbar">
+      <div class="brand">
+        <h1 class="brand-title">Fumart</h1>
+        <p class="brand-subtitle">for seller</p>
       </div>
-      <div class="user"></div>
-    </nav>
-    <div class="container">
-      <div class="sidebar">
-        <div class="group">
-          <div class="item">Dashboard</div>
-          <div class="item-active">Products</div>
-          <div class="item">Orders</div>
-          <div class="item">Settings</div>
-        </div>
-        <div class="group">
-          <div class="item">Help</div>
-          <div class="item">Feedback</div>
-        </div>
-      </div>
-      <div class="main">
-        <div class="header">
-          <h1>Products</h1>
-          <div><button class="add-btn">+ Add Product</button></div>
-        </div>
+      <div class="user-profile"></div>
+    </header>
 
-        <div class="card-container">
-          <div class="card">
-            <div class="top">
-              <img src="earbuds.png" class="product-img" alt="earbuds" />
-              <span class="title">Wireless Earbuds</span>
-            </div>
+    <div class="layout">
+      <aside class="sidebar">
+        <nav class="nav-group">
+          <a class="nav-link">Dashboard</a>
+          <a class="nav-link active">Products</a>
+          <a class="nav-link">Orders</a>
+          <a class="nav-link">Settings</a>
+        </nav>
+        <nav class="nav-group">
+          <a class="nav-link">Help</a>
+          <a class="nav-link">Feedback</a>
+        </nav>
+      </aside>
 
-            <div class="bottom">
-              <div class="content">
-                <div><strong>Category:</strong> Electronics</div>
-                <div><strong>Price:</strong> $108</div>
-                <div class="row">
-                  <span class="label">Desc:</span>
-                  <p class="value">
+      <main class="main-content">
+        <header class="page-header">
+          <h1 class="page-title">Products</h1>
+          <button class="btn-primary">+ Add Product</button>
+        </header>
+
+        <section class="products-grid">
+          <article class="product-card">
+            <header class="card-header">
+              <h2 class="card-title">Wireless Earbuds</h2>
+            </header>
+
+            <div class="card-body">
+              <div class="card-info">
+                <div class="info-item">
+                  <strong>Category:</strong> Electronics
+                </div>
+                <div class="info-item"><strong>Price:</strong> $108</div>
+                <div class="info-item description-row">
+                  <span class="info-label">Desc:</span>
+                  <p class="info-text">
                     Compact wireless earbuds delivering crisp audio and seamless
                     Bluetooth connectivity. With long-lasting battery life and
                     noise-isolating design, they offer an immersive listening
@@ -62,24 +65,28 @@
                 </div>
               </div>
 
-              <hr style="width: 100%" />
+              <hr class="divider" />
 
-              <div class="actions">
-                <button class="btn">✏️</button>
-                <button class="btn">🗑️</button>
+              <div class="card-actions">
+                <button class="icon-btn" aria-label="Edit product">✏️</button>
+                <button class="icon-btn" aria-label="Delete product">🗑️</button>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="card">
-            <div class="top">Yoga Mat</div>
-            <div class="bottom">
-              <div class="content">
-                <div><strong>Category:</strong> Electronics</div>
-                <div><strong>Price:</strong> $108</div>
-                <div class="row">
-                  <span class="label">Desc:</span>
-                  <p class="value">
+          <article class="product-card">
+            <header class="card-header">
+              <h2 class="card-title">Yoga Mat</h2>
+            </header>
+            <div class="card-body">
+              <div class="card-info">
+                <div class="info-item">
+                  <strong>Category:</strong> Electronics
+                </div>
+                <div class="info-item"><strong>Price:</strong> $108</div>
+                <div class="info-item description-row">
+                  <span class="info-label">Desc:</span>
+                  <p class="info-text">
                     Compact wireless earbuds delivering crisp audio and seamless
                     Bluetooth connectivity. With long-lasting battery life and
                     noise-isolating design, they offer an immersive listening
@@ -89,23 +96,28 @@
                 </div>
               </div>
 
-              <hr style="width: 100%" />
+              <hr class="divider" />
 
-              <div class="actions">
-                <button class="btn">✏️</button>
-                <button class="btn">🗑️</button>
+              <div class="card-actions">
+                <button class="icon-btn" aria-label="Edit product">✏️</button>
+                <button class="icon-btn" aria-label="Delete product">🗑️</button>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="top">Leather Backpack</div>
-            <div class="bottom">
-              <div class="content">
-                <div><strong>Category:</strong> Electronics</div>
-                <div><strong>Price:</strong> $108</div>
-                <div class="row">
-                  <span class="label">Desc:</span>
-                  <p class="value">
+          </article>
+
+          <article class="product-card">
+            <header class="card-header">
+              <h2 class="card-title">Leather Backpack</h2>
+            </header>
+            <div class="card-body">
+              <div class="card-info">
+                <div class="info-item">
+                  <strong>Category:</strong> Electronics
+                </div>
+                <div class="info-item"><strong>Price:</strong> $108</div>
+                <div class="info-item description-row">
+                  <span class="info-label">Desc:</span>
+                  <p class="info-text">
                     Compact wireless earbuds delivering crisp audio and seamless
                     Bluetooth connectivity. With long-lasting battery life and
                     noise-isolating design, they offer an immersive listening
@@ -115,16 +127,47 @@
                 </div>
               </div>
 
-              <hr style="width: 100%" />
+              <hr class="divider" />
 
-              <div class="actions">
-                <button class="btn">✏️</button>
-                <button class="btn">🗑️</button>
+              <div class="card-actions">
+                <button class="icon-btn" aria-label="Edit product">✏️</button>
+                <button class="icon-btn" aria-label="Delete product">🗑️</button>
               </div>
             </div>
+          </article>
+        </section>
+
+        <section class="form-container">
+          <div class="add-product-modal" style="display: none">
+            <form class="product-form">
+              <div class="form-row">
+                <div class="form-labels">
+                  <label class="form-label">Product Name:</label>
+                  <label class="form-label">Product Category:</label>
+                  <label class="form-label">Price:</label>
+                  <label class="form-label">Desc:</label>
+                </div>
+                <div class="form-inputs">
+                  <input type="text" class="text-input" />
+                  <input type="text" class="text-input" />
+                  <input type="text" class="text-input" />
+                  <input type="text" class="text-input" />
+                </div>
+              </div>
+              <div class="file-upload">
+                <label class="form-label">Photo:</label>
+                <input type="file" class="file-input" />
+              </div>
+            </form>
+
+            <hr class="divider" />
+
+            <div class="form-actions">
+              <button class="btn-primary">Add Product</button>
+            </div>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
 
     <script src="script.js"></script>
